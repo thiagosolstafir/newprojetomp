@@ -200,3 +200,13 @@
   -webkit-justify-content: center;
   justify-content: center;
 }
+
+// title bar
+
+.title-bar {
+  padding: 0.7rem 0.7rem;
+}
+.title-bar-left, .title-bar-right {
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
+}
