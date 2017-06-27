@@ -5151,7 +5151,7 @@ textarea {
   input[type=email]:hover,
   input[type=password]:hover,
   textarea:hover {
-    border-color: #ff0000; }
+    border-color: #ff0; }
 
 .fluid {
   width: 100%;
@@ -5166,36 +5166,13 @@ textarea {
   height: auto;
   padding: 0 15px; }
 
-/******************************
-* swipper
-*******************************/
 .swiper-wrapper {
   opacity: 0; }
 
-#destaque .swiper-pagination {
-  position: relative;
-  float: left;
-  margin: -30px 0 0 0; }
-  #destaque .swiper-pagination .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    background: #fff;
-    margin: 0 20px 2px 0;
-    opacity: 1; }
-    #destaque .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      width: 10px;
-      height: 10px;
-      margin-bottom: 0 !important; }
-  #destaque .swiper-pagination .swiper-container-horizontal.swiper-pagination-bullets {
-    bottom: 20px; }
-
 .swiper-button-disabled {
-  cursor: default !important;
-  opacity: 0.5; }
+  cursor: default;
+  opacity: .5; }
 
-/******************************
-* Helper
-*******************************/
 .ctr {
   display: -ms-flex;
   display: -webkit-flex;
@@ -5213,9 +5190,14 @@ textarea {
 * Menu mobile
 *******************************/
 .title-bar-bg-active {
-  background: #ff0000 !important; }
+  background: #ff0 !important; }
 
 .title-bar {
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   height: 50px;
   float: left;
@@ -5224,19 +5206,14 @@ textarea {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2000;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  -webkit-tap-highlight-color: transparent; }
+  z-index: 2000; }
   .title-bar button {
     background: transparent; }
   .title-bar .title-bar-title {
     opacity: 0; }
 
 .m-mobile {
-  background: #fff; }
+  background: #ffffff; }
   .m-mobile ul {
     margin: 50px 0 0 0; }
     .m-mobile ul a {
@@ -5248,7 +5225,7 @@ textarea {
       transition: all 200ms ease-in-out;
       -webkit-tap-highlight-color: transparent; }
       .m-mobile ul a:hover, .m-mobile ul a.ativo {
-        background: #ff0000;
+        background: #ff0;
         color: #fff; }
   .m-mobile .close-button {
     color: #000;
@@ -5258,7 +5235,7 @@ textarea {
     transition: all 200ms ease-in-out;
     -webkit-tap-highlight-color: transparent; }
     .m-mobile .close-button:hover {
-      color: #ff0000; }
+      color: #ff0; }
   .m-mobile .menu.vertical > li {
     width: 100%;
     float: left; }
@@ -5320,7 +5297,7 @@ textarea {
   height: 50px;
   float: left;
   margin: 0;
-  background: #ff0000;
+  background: #ff0;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
@@ -5350,7 +5327,7 @@ textarea {
         font-size: 14px;
         line-height: 50; }
         .menu-fixed ul li a:hover, .menu-fixed ul li a.ativo {
-          color: #ff0000; }
+          color: #ff0; }
   .menu-fixed.open {
     top: 0; }
 
