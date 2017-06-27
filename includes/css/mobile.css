@@ -1,0 +1,17 @@
+@media (max-width: 1023px) {
+    .title-bar {
+        display: flex;
+    }
+}
+
+@media (max-width: 967px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 467px) {
+
+}

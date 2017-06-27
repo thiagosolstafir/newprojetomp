@@ -1,0 +1,46 @@
+@import "../_settings";
+@import "mixins";
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: $body-font-family;
+  font-size: $global-font-size;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a,
+button,
+input[type="image"] {
+
+  cursor: pointer;
+  text-decoration: none;
+  outline: none !important;
+  @include mp-animacao;
+  box-shadow: none !important;
+
+}
+
+input,
+button[type="submit"],
+textarea {
+  font-family: $body-font-family;
+  outline: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+
+  @include mp-animacao;
+
+  &:hover {
+    border-color: $color-default;
+  }
+}
