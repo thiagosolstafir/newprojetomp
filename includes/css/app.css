@@ -5173,19 +5173,6 @@ textarea {
   cursor: default;
   opacity: .5; }
 
-.ctr {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  /* centraliza na vertical */
-  -ms-align-items: center;
-  -webkit-align-items: center;
-  align-items: center;
-  /* centraliza na horizontal */
-  -ms-justify-content: center;
-  -webkit-justify-content: center;
-  justify-content: center; }
-
 /******************************
 * Menu mobile
 *******************************/
@@ -5325,7 +5312,7 @@ textarea {
         margin: 0;
         color: #000;
         font-size: 14px;
-        line-height: 50; }
+        line-height: 50px; }
         .menu-fixed ul li a:hover, .menu-fixed ul li a.ativo {
           color: #ff0; }
   .menu-fixed.open {
@@ -5346,6 +5333,13 @@ textarea {
   -ms-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center; }
+
+.title-bar {
+  padding: 0.7rem 0.7rem; }
+
+.title-bar-left, .title-bar-right {
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px; }
 
 /**
  * Swiper 3.4.0

@@ -4,9 +4,10 @@
 @mixin mp-form-select(
   $altura,
   $bg,
-  $border-radius,
-  $tamanho-border-radius,
-  $tamanho-borda, $cor-borda,
+  $border-radius, // false ou true
+  $tamanho-border-radius, // px
+  $tamanho-borda,
+  $cor-borda,
   $cor-borda-hover,
   $tamanho-fonte,
   $cor-fonte,

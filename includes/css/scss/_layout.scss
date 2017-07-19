@@ -29,22 +29,6 @@
   opacity: .5;
 }
 
-// helper //
-
-.ctr {
-  //noinspection CssInvalidPropertyValue
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-  /* centraliza na vertical */
-  -ms-align-items: center;
-  -webkit-align-items: center;
-  align-items: center;
-  /* centraliza na horizontal */
-  -ms-justify-content: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
 
 /******************************
 * Menu mobile
@@ -171,7 +155,7 @@
         @include mp-width(auto, 50px);
         color: $color-second-default;
         font-size: 14px;
-        line-height: 50;
+        line-height: 50px;
         &:hover, &.ativo {
           color: $color-default;
         }
