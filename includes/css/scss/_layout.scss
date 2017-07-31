@@ -25,7 +25,7 @@
 
 .swiper-button-disabled {
   cursor: default;
-  opacity: .5;
+  //opacity: .5;
 }
 
 
@@ -34,14 +34,14 @@
 *******************************/
 
 .title-bar-bg-active {
-  background: $color-default !important;
+  background: rgba(68, 68, 68, 0.85) !important;
 }
 
 
 .title-bar {
   @include mp-animacao;
   width: 100%;
-  height: 50px;
+  height: 40px;
   float: left;
   display: none;
   background: transparent;
@@ -49,6 +49,8 @@
   left: 0;
   top: 0;
   z-index: 2000;
+  padding-left: 15px;
+  padding-right: 15px;
 
 
   button {
@@ -186,10 +188,12 @@
 
 // title bar
 
-.title-bar {
-  padding: 0.7rem 0.7rem;
-}
 .title-bar-left, .title-bar-right {
   -ms-flex: 1 1 0px;
   flex: 1 1 0px;
+}
+
+// hamburguer
+.title-bar .menu-icon{
+   margin-left: 0;
 }
