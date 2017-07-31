@@ -2,6 +2,4 @@
 <?php include "template-site/top.php"; ?>
 
 
-teste
-
 <?php include "template-site/footer.php"; ?>
