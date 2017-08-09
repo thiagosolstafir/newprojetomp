@@ -139,7 +139,7 @@
 
     <?php if (!isset($idMP)) { ?>
 
-        <a onClick="lt(0,0,0);" class="close"></a>
+        <a onClick="lt_galeria();" class="close"></a>
         <a id="bt-tela" class="maximizar" onclick="toggleFullScreen()"></a>
 
     <?php } ?>
@@ -316,6 +316,3 @@
     </div>
 
 </div>
-
-
-

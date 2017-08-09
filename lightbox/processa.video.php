@@ -3,7 +3,7 @@
 
 <div id="top-lt" style="background:transparent;">
 
-    <a onClick="lt_scroll(0,0);" class="close"></a>
+    <a onClick="lt_scroll();" class="close"></a>
 
 </div>
 
