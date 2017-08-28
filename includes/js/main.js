@@ -88,19 +88,6 @@ function allFunctions() {
         $(".swiper-wrapper").animate({opacity: 1}, 200);
     }, 400);
 
-    //google maps desabilita scroll
-    $('#mapa iframe').addClass('scrolloff');
-    $('#mapa').on("mouseup", function () {
-        $('#mapa iframe').addClass('scrolloff');
-    });
-    $('#mapa').on("mousedown", function () {
-        $('#mapa iframe').removeClass('scrolloff');
-    });
-    $('#mapa iframe').mouseleave(function () {
-        $('#mapa iframe').addClass('scrolloff');
-    });
-
-
     //select
     $(".form-select select ").change(function () {
         var rec = $(this).parent('.form-select').find('strong');
