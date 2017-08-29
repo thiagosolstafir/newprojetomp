@@ -22,6 +22,7 @@
    columns: $q;
    -webkit-columns: $q;
    -moz-columns: $q;
+   @content;
 }
 
 @mixin mp-animacao($tempo: 200ms) {

@@ -20,9 +20,7 @@
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.center.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.caption2.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.scrollVert.js?<?php echo rand(); ?>"></script>
-
-    <!-- Compressed JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+    <script src="<?php echo $mainFolder; ?>/includes/js/foundation.js"<?php echo rand(); ?>></script>
 
     <script type="text/javascript">
     $.fn.cycle.defaults.autoSelector = '.slideshow';
