@@ -1,7 +1,7 @@
 <?php
 
-$siteName = "Projetomp";
-$mainFolder = "/_/newprojetomp"; // diretorio
+$siteName = "Sul Motos";
+$mainFolder = "/sulmotospa.com.br"; // diretorio
 $urlFile = "#"; // url arquivos
 
 

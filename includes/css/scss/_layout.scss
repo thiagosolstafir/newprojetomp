@@ -81,11 +81,11 @@
   }
 
   .close-button {
-    color: $color-second-default;
+    color: #111;
     @include mp-animacao;
 
     &:hover {
-      color: $color-default;
+      opacity: .5;
     }
   }
 
