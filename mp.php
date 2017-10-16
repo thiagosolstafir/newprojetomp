@@ -1,7 +1,7 @@
 <?php
 
-$siteName = "Sul Motos";
-$mainFolder = "/sulmotospa.com.br"; // diretorio
+$siteName = "#";
+$mainFolder = "/"; // diretorio
 $urlFile = "#"; // url arquivos
 
 
