@@ -13,3 +13,70 @@
       background: $color-second-default;
    }
 }
+
+// lista imoveis
+.lista-imoveis{
+   @include mp-calc(width, '100% + 22px');
+   float: right;
+
+   .a{
+      @include mp-width($m: 40px 0 0 0);
+   }
+
+   .b{
+      @include mp-width($m: 40px 0 0 0);
+      display: none;
+   }
+
+   a{
+      @include mp-calc(width, '100% / 3 - 22px');
+      float: left;
+      margin-left: 22px;
+      overflow: hidden;
+      @include mp-br(6px, 6px, 6px, 6px);
+
+
+      &:hover .tit{
+         color: $color-default;
+      }
+
+      &:hover figure img{
+         @include mp-scale(1.05);
+      }
+
+      figure{
+         @include mp-width();
+         @include mp-br(6px, 6px, 6px, 6px);
+         overflow: hidden;
+
+         img{
+            @include mp-br(6px, 6px, 6px, 6px);
+            @include mp-animacao();
+
+         }
+      }
+
+      .endereco{
+         @include mp-width($m: 10px 0);
+         font-size: 12px;
+         color: #808080;
+         @include mp-sombra();
+      }
+
+      .tit{
+         @include mp-width();
+         font-size: 18px;
+         line-height: 23px;
+         color: #212121;
+         @include mp-sombra();
+         @include mp-animacao();
+      }
+
+      .preco{
+         @include mp-width($m: 5px 0 0 0);
+         color: #808080;
+         font-size: 12px;
+         @include mp-sombra();
+      }
+   }
+}

@@ -38,11 +38,21 @@
 
     <div class="m-mobile off-canvas position-left" id="menuMobile" data-off-canvas>
 
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <!-- <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
-        </button>
+        </button> -->
 
-        <!-- Menu mobile -->
+        <div class="logo-menu-mobile ctr">
+           <a href="<?php echo $mainFolder; ?>/home"><img src="https://dummyimage.com/320x120" alt=""></a>
+        </div>
+
+        <ul class="vertical menu text-center">
+           <li><a href="<?php echo $mainFolder; ?>/home" <?php if($page == "home"){ ?> class="ativo" <?php } ?>>Home</a></li>
+           <li><a href="#">Sobre</a></li>
+           <li><a href="#">Sobre</a></li>
+           <li><a href="#">Sobre</a></li>
+           <li><a href="#">Sobre</a></li>
+        </ul>
 
 
     </div>

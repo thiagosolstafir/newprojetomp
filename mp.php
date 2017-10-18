@@ -1,7 +1,7 @@
 <?php
 
 $siteName = "#";
-$mainFolder = "/"; // diretorio
+$mainFolder = "/_/newprojetomp"; // diretorio
 $urlFile = "#"; // url arquivos
 
 
