@@ -21,6 +21,7 @@
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.caption2.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.scrollVert.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/foundation.js"<?php echo rand(); ?>></script>
+    <script src="<?php echo $mainFolder; ?>/includes/js/swiper.js"></script>
 
     <script type="text/javascript">
     $.fn.cycle.defaults.autoSelector = '.slideshow';
