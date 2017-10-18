@@ -49,10 +49,6 @@
 
         <ul class="vertical menu text-center">
            <li><a href="<?php echo $mainFolder; ?>/home" <?php if($page == "home"){ ?> class="ativo" <?php } ?>>Home</a></li>
-           <li><a href="#">Sobre</a></li>
-           <li><a href="#">Sobre</a></li>
-           <li><a href="#">Sobre</a></li>
-           <li><a href="#">Sobre</a></li>
         </ul>
 
 
