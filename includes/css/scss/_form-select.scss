@@ -21,6 +21,7 @@
     height: $altura;
     background: url("../imgs/#{$bg}.png") no-repeat right center;
     @include mp-animacao;
+    @content;
 
     @if $border-radius == true {
       @include mp-br($tamanho-border-radius, $tamanho-border-radius, $tamanho-border-radius, $tamanho-border-radius);

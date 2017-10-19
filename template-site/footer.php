@@ -1,4 +1,4 @@
-<script src="<?php echo $mainFolder; ?>/includes/js/iscroll.js"></script>
+<!-- <script src="<?php echo $mainFolder; ?>/includes/js/iscroll.js"></script> -->
 
 <script>
     //foundation
