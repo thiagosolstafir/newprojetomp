@@ -12809,4 +12809,24 @@ Copyright (c) 2015 Daniel Eden
     margin: 0;
     background: #000; }
 
+@media (max-width: 1023px) {
+  .title-bar {
+    display: flex; }
+
+  #topo {
+    display: none; }
+
+  input, textarea {
+    font-size: 14px; }
+    input.placeholder, textarea.placeholder {
+      font-size: 14px; }
+    input:-moz-placeholder, textarea:-moz-placeholder {
+      font-size: 14px; }
+    input::-moz-placeholder, textarea::-moz-placeholder {
+      font-size: 14px; }
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+      font-size: 14px; }
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      font-size: 14px; } }
+
 /*# sourceMappingURL=app.css.map */

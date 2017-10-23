@@ -1,0 +1,29 @@
+@media (max-width: 1023px) {
+   .title-bar {
+      display: flex;
+   }
+
+   #topo{
+      display: none;
+   }
+
+   input, textarea{
+      font-size: 14px;
+
+      @include mp-placeholder{
+         font-size: 14px;
+      }
+   }
+}
+
+@media (max-width: 968px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 468px) {
+
+}
