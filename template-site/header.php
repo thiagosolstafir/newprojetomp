@@ -10,6 +10,7 @@
     <title><?php echo $siteName; ?></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/app.css?<?php echo rand(); ?>">
+    <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/alteracoes.css?<?php echo rand(); ?>">
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/wow.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/main.js?<?php echo rand(); ?>"></script>
@@ -49,7 +50,7 @@
         <ul class="vertical menu text-center">
            <li><a href="<?php echo $mainFolder; ?>/home" <?php if($page == "home"){ ?> class="ativo" <?php } ?>>Home</a></li>
         </ul>
-        
+
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
