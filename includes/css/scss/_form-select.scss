@@ -3,7 +3,8 @@
 
 @mixin mp-form-select(
   $altura,
-  $bg,
+  $img-bg,
+  $color-bg,
   $border-radius, // false ou true
   $tamanho-border-radius, // px
   $tamanho-borda,
@@ -19,7 +20,7 @@
     width: 100%;
     float: left;
     height: $altura;
-    background: url("../imgs/#{$bg}.png") no-repeat right center;
+    background: url("../imgs/#{$bg}.png") right center no-repeat $color-bg;
     @include mp-animacao;
     @content;
 
