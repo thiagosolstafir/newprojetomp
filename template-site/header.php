@@ -36,7 +36,6 @@
 </head>
 <body>
 
-
     <div class="m-mobile off-canvas position-left" id="menuMobile" data-off-canvas>
 
         <!-- <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -50,8 +49,7 @@
         <ul class="vertical menu text-center">
            <li><a href="<?php echo $mainFolder; ?>/home" <?php if($page == "home"){ ?> class="ativo" <?php } ?>>Home</a></li>
         </ul>
-
-
+        
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
