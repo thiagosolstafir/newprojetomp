@@ -7,9 +7,7 @@ var top = 0;
 var id = 0;
 var url;
 
-
 $(document).ready(function (e) {
-
    allFunctions();
 });
 
@@ -23,7 +21,7 @@ function loadAjust() {
    //  $("#conteudo").css("margin-top", h_tela);
 
 
-   // se existir a galeria, descomentar
+   // galeria horizontal
    // if (w_tela < 1023) {
    //     $(".abrir-galeria").css('display', 'block');
    // }else{
