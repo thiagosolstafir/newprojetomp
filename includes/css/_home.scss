@@ -2,14 +2,5 @@
 @import 'scss/mixins';
 
 #topo{
-   @include mp-width();
-   position: fixed;
-   top: 0;
-   left: 0;
-   float: left;
 
-   .topo-int{
-      @include mp-width($h: 100px);
-      background: $color-second-default;
-   }
 }

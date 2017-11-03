@@ -34,13 +34,11 @@
     }
 
     select {
-      width: 100%;
-      height: $altura;
-      float: left;
+      @include mp-width($h: $altura, $m: -$altura 0 0 0);
+      padding: 0;
       position: relative;
       opacity: 0;
       cursor: pointer;
-      margin-top: -$altura;
     }
 
     strong {
