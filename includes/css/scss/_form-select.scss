@@ -20,7 +20,7 @@
     width: 100%;
     float: left;
     height: $altura;
-    background: url("../imgs/#{$bg}.png") right center no-repeat $color-bg;
+    background: url("../imgs/#{$img-bg}.png") right center no-repeat $color-bg;
     @include mp-animacao;
     @content;
 
