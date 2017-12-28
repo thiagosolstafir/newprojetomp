@@ -48,6 +48,13 @@
    border-radius: $tl $tr $br $bl;
 }
 
+@mixin mp-brall($br: 4px) {
+   -webkit-border-radius: $br;
+   -moz-border-radius: $br;
+   -o-border-radius: $br;
+   border-radius: $br;
+}
+
 @mixin mp-sombra($c: #333, $t: 0.2px) {
    -webkit-text-stroke-color: $c !important;
    -webkit-text-stroke: $t !important;
