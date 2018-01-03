@@ -9,7 +9,22 @@
 }
 
 // select
-@mixin select(){
+@mixin select($input: false){
+
+@if $input == true{
+    .fstToggleBtn{
+        color: $color-second-default !important;
+    }
+
+    .fstSingleMode .fstQueryInput{
+        opacity: 0;
+    }
+
+    .fstSingleMode.fstActive .fstResults{
+        margin-top: -65px;
+    }
+} @else {
+
 .fstElement{
     width: 100%;
     float: left;
@@ -64,6 +79,6 @@
     line-height: 20px;
     padding: 10px;
   }
-  
+}
   @content;
 }
