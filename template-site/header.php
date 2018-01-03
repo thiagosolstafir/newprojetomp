@@ -31,8 +31,6 @@
     new WOW().init();
 
     window.mainFolder = '<?php echo $mainFolder; ?>';
-    window.idMP = '';
-    window.descMP = '';
     window.mpPage = '<?php echo ucfirst($page); ?>';
     window.mainTitle = '<?php echo $siteName; ?>';
     </script>
