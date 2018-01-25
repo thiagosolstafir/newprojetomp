@@ -101,7 +101,7 @@ function allFunctions() {
       });
    });
 
-   //executa ao carregar página
+   //executa ao carregar pï¿½gina
    window.onload = function () {
       setTimeout('loadAjust()', 200);
    };
@@ -131,12 +131,15 @@ function allFunctions() {
 
 
 function lock_scroll() {
-   $('body').bind('scroll touchmove mousewheel', function (e) {
-      e.preventDefault();
-      return false;
-   });
+
+   $('body').css('overflow','hidden').css('position','relative');
+   // $('body').bind('scroll touchmove mousewheel', function (e) {
+   //    e.preventDefault();
+   //    return false;
+   // });
 }
 
 function unlock_scroll() {
-   $('body').unbind('scroll touchmove mousewheel');
+   //$('body').unbind('scroll touchmove mousewheel');
+   $('body').css('overflow','visible').css('position','relative');
 }
