@@ -9,9 +9,14 @@
 
     <title><?php echo $siteName; ?></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="<?php echo $mainFolder; ?>/includes/css/lightgallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/iziModal.css?<?php echo rand(); ?>">
     <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/app.css?<?php echo rand(); ?>">
     <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/alteracoes.css?<?php echo rand(); ?>">
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.js?<?php echo rand(); ?>"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/wow.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/main.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.js?<?php echo rand(); ?>"></script>
