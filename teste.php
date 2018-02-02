@@ -1,21 +1,58 @@
-<link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/iziModal.css?<?php echo rand(); ?>">
-<script src="<?php echo $mainFolder; ?>/includes/js/jquery.js?<?php echo rand(); ?>"></script>
+<?php include "template-site/header.php"; ?>
+<?php include "template-site/top.php"; ?>
 
+<style>
+#lightgallery{
+  width: 100%;
+  float: left;
+}
+#lightgallery a img{
+  width: 200px;
+  height: 200px;
+}
 
-<!-- Modal structure -->
-<div id="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
-    asdsadasdasdasd
+</style>
+
+<div id="lightgallery">
+  <a data-src="<?php echo $mainFolder; ?>/includes/imgs/1.jpg" data-sub-html="<h4>Algum texto</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius obcaecati, voluptate laboriosam! Reprehenderit pariatur nesciunt quisqua distinctio. Quibusdam neque ipsa natus error tempore!</p>">
+    <img src="<?php echo $mainFolder; ?>/includes/imgs/1.jpg">
+  </a>
+  <a data-src="<?php echo $mainFolder; ?>/includes/imgs/2.jpg" data-sub-html="<h4>Algum texto</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius obcaecati, voluptate laboriosam! Reprehenderit pariatur nesciunt quisqua distinctio. Quibusdam neque ipsa natus error tempore!</p>">
+    <img src="<?php echo $mainFolder; ?>/includes/imgs/2.jpg">
+  </a>
+  <a data-src="<?php echo $mainFolder; ?>/includes/imgs/3.jpg" data-sub-html="<h4>Algum texto</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius obcaecati, voluptate laboriosam! Reprehenderit pariatur nesciunt quisqua distinctio. Quibusdam neque ipsa natus error tempore!</p>">
+    <img src="<?php echo $mainFolder; ?>/includes/imgs/3.jpg">
+  </a>
 </div>
 
-<!-- Trigger to open Modal -->
-<a href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Modal</a>
+<div class="modal">
+  <p>Second AJAX Example!</p>
+</div>
 
-<script>
-$(document).on('click', '.trigger', function (event) {
+<a href="ajax/ajax.php?teste=thiago" id="manual-ajax">second example</a>
 
-  // $('#modal').iziModal('setZindex', 99999);
-  $('#modal').iziModal('open', { zindex: 99999 });
-  //$('#modal').iziModal();
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+  $('#manual-ajax').click(function(event) {
+    event.preventDefault();
+    this.blur(); // Manually remove focus from clicked link.
+    $.get(this.href, function(html) {
+      $(html).appendTo('body').modal({
+        fadeDuration: 300,
+        fadeDelay: 0.50
+      });
+    });
+  });
+
+
+  $('#lightgallery').lightGallery({
+
+  });
 });
 </script>
-<script src="<?php echo $mainFolder; ?>/includes/js/iziModal.js"></script>
+
+<?php include "template-site/footer.php"; ?>
