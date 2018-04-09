@@ -1,10 +1,9 @@
-<?php include "template-site/header.php"; ?>
-<?php include "template-site/top.php"; ?>
+<link href="<?php echo $mainFolder; ?>/includes/css/lightgallery.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
 <style>
 #lightgallery{
   width: 100%;
-  height: 5000px;
   float: left;
 }
 #lightgallery a img{
@@ -26,34 +25,14 @@
   </a>
 </div>
 
-<div class="modal">
-  <p>Second AJAX Example!</p>
-</div>
-
-<a href="ajax/ajax.php?teste=thiago" id="manual-ajax">second example</a>
 
 
 <script type="text/javascript">
-
 $(document).ready(function(){
-
-
-  $('#manual-ajax').click(function(event) {
-    event.preventDefault();
-    this.blur(); // Manually remove focus from clicked link.
-    $.get(this.href, function(html) {
-      $(html).appendTo('body').modal({
-        fadeDuration: 300,
-        fadeDelay: 0.50
-      });
-    });
-  });
-
-
-  $('#lightgallery').lightGallery({
-
-  });
+  $('#lightgallery').lightGallery();
 });
 </script>
 
-<?php include "template-site/footer.php"; ?>
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="<?php echo $mainFolder; ?>/includes/js/lightgallery-all.min.js"></script>
+<script src="<?php echo $mainFolder; ?>/includes/js/jquery.mousewheel.min.js"></script>
