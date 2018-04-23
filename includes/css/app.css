@@ -5118,7 +5118,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   overflow-x: hidden;
-  overflow-y: scroll; }
+    overflow-y: scroll;
+    background: #fff;
+}
 
 a,
 button,
@@ -12590,6 +12592,11 @@ Multiple mode
   top: 20px !important;
   right: 20px !important; }
 
+@media (max-width: 1360px) {
+    .area-navs {
+        display: none !important;
+    }
+}
 @media (max-width: 1023px) {
   .title-bar {
     display: flex; }

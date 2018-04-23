@@ -10,7 +10,6 @@
     <title><?php echo $siteName; ?></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="<?php echo $mainFolder; ?>/includes/css/lightgallery.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/iziModal.css?<?php echo rand(); ?>">
     <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/app.css?<?php echo rand(); ?>">
     <link rel="stylesheet" href="<?php echo $mainFolder; ?>/includes/css/alteracoes.css?<?php echo rand(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
@@ -19,20 +18,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/wow.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/main.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.carousel.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.swipe.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.center.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.caption2.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/jquery.cycle2.scrollVert.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/foundation.js"<?php echo rand(); ?>></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/swiper.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/fastsearch.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/fastselect.js"></script>
-    <!-- <script src="<?php echo $mainFolder; ?>/includes/js/floating.js"></script> -->
 
     <script type="text/javascript">
-    $.fn.cycle.defaults.autoSelector = '.slideshow';
     new WOW().init();
 
     window.mainFolder = '<?php echo $mainFolder; ?>';
@@ -49,7 +40,8 @@
         </button> -->
 
         <div class="logo-menu-mobile ctr">
-           <a href="<?php echo $mainFolder; ?>/home"><img src="https://dummyimage.com/320x120" alt=""></a>
+            <a href="<?php echo $mainFolder; ?>/home"><img src="<?php echo $mainFolder; ?>/includes/imgs/logo.png"
+                                                           alt=""></a>
         </div>
 
         <ul class="vertical menu text-center">
@@ -59,11 +51,3 @@
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
-
-        <div id="lt" class="fluid">
-            <div id="lt-int"></div>
-        </div>
-
-        <div id="lt-scroll" class="fluid">
-            <div id="lt-scroll-int"></div>
-        </div>

@@ -9,10 +9,11 @@
 }
 
 body {
-  font-family: $body-font-family;
+  font-family: $bff;
   font-size: $global-font-size;
   overflow-x: hidden;
   overflow-y: scroll;
+  background: $bgc;
 }
 
 a,
@@ -28,7 +29,7 @@ input[type="image"] {
 input,
 button[type="submit"],
 textarea {
-  font-family: $body-font-family;
+  font-family: $bff;
   outline: none;
 }
 
@@ -40,6 +41,6 @@ textarea {
   @include mp-animacao;
 
   &:hover {
-    border-color: $color-default;
+    border-color: $cd;
   }
 }

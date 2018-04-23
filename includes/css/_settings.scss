@@ -1,13 +1,14 @@
 $global-responsive: 1190px;
 $global-font-size: 14px;
 $global-lineheight: 1.5;
-$color-default:  #000;
-$color-second-default: #000;
-$color-txt: #363537;
-$body-font-family: 'Roboto', sans-serif;
+$bgc: #fff;
+$cd: #000;
+$csd: #000;
+$ctxt: #363537;
+$bff: 'Roboto', sans-serif;
 
 // menu responsivo
 $lk-color: #000;
 $lk-color-active: #fff;
-$bg-color-active: #000;
+$bg-color-active: $cd;
 $hamb-color: #eee;

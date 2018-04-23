@@ -1,3 +1,6 @@
+@import "settings";
+@import "scss/mixins";
+
 // slider int
 .slider-int{
    @include mp-width();

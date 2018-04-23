@@ -13,12 +13,6 @@
 </div>
 </div>
 
-<!-- load lightbox default -->
-<div id="load">
-    <span></span>
-    <div></div>
-</div>
-
 
 </body>
 </html>
