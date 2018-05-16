@@ -269,3 +269,28 @@ ol, ul, li {
   margin: 0;
   padding: 0;
 }
+
+// slider int
+.slider-int {
+  @include mp-width();
+  position: relative;
+}
+
+// modal
+.blocker {
+  padding: 0 !important;
+  background: #fff;
+}
+
+.modal {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+}
+
+.close-modal {
+  top: 20px !important;
+  right: 20px !important;
+}
