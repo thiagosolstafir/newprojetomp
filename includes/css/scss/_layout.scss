@@ -3,212 +3,269 @@
 
 // layout
 .fluid {
-   width: 100%;
-   height: auto;
-   float: left;
-   clear: both;
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
 }
 
 .responsive {
-   width: 100%;
-   max-width: $global-responsive;
-   margin: 0 auto;
-   height: auto;
-   padding: 0 15px;
+  width: 100%;
+  max-width: $global-responsive;
+  margin: 0 auto;
+  height: auto;
+  padding: 0 15px;
 }
 
 // swiper //
 .swiper-wrapper {
-   opacity: 0;
+  opacity: 0;
 }
 
 .swiper-button-disabled {
-   cursor: default;
-   //opacity: .5;
+  cursor: default;
+  //opacity: .5;
 }
-
 
 /******************************
 * Menu mobile
 *******************************/
 .title-bar-bg-active {
-   background: rgba(68, 68, 68, 0.85) !important;
+  background: rgba(68, 68, 68, 0.85) !important;
 }
 
 .title-bar {
-   @include mp-animacao;
-   width: 100%;
-   height: 40px;
-   float: left;
-   display: none;
-   background: transparent;
-   position: fixed;
-   left: 0;
-   top: 0;
-   z-index: 1000;
-   padding-left: 15px;
-   padding-right: 15px;
+  @include mp-animacao;
+  width: 100%;
+  height: 40px;
+  float: left;
+  display: none;
+  background: transparent;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  padding-left: 15px;
+  padding-right: 15px;
 
-   button {
-      background: transparent;
-   }
+  button {
+    background: transparent;
+  }
 
-   .title-bar-title {
-      opacity: 0;
-   }
+  .title-bar-title {
+    opacity: 0;
+  }
 }
 
 .m-mobile {
-   background: #ffffff;
-   ul {
-      margin: 50px 0 0 0;
+  background: #ffffff;
+  ul {
+    margin: 50px 0 0 0;
 
-      li{
-         border-bottom: 1px solid #eee;
-         &:last-child{
-            border-bottom: 0;
-         }
+    li {
+      border-bottom: 1px solid #eee;
+      &:last-child {
+        border-bottom: 0;
       }
+    }
 
-      a {
-         font-size: 13px;
-         color: $lk-color;
-         @include mp-animacao;
-
-         &:hover, &.ativo {
-            background: $bg-color-active;
-            color: $lk-color-active;
-         }
-      }
-   }
-
-   .close-button {
-      color: #111;
+    a {
+      font-size: 13px;
+      color: $lk-color;
       @include mp-animacao;
 
-      &:hover {
-         opacity: .5;
+      &:hover, &.ativo {
+        background: $bg-color-active;
+        color: $lk-color-active;
       }
-   }
+    }
+  }
 
-   .menu {
-      &.vertical {
-         @include mp-width($m: 40px 0 0 0);
-         & > li {
-            width: 100%;
-            float: left;
-         }
+  .close-button {
+    color: #111;
+    @include mp-animacao;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  .menu {
+    &.vertical {
+      @include mp-width($m: 40px 0 0 0);
+      & > li {
+        width: 100%;
+        float: left;
       }
-   }
+    }
+  }
 
-   .divider {
-      width: 100%;
-      height: 1px;
-      float: left;
-      background: $csd;
-      opacity: .1;
-      margin: 5px 0 4px 0;
-   }
+  .divider {
+    width: 100%;
+    height: 1px;
+    float: left;
+    background: $csd;
+    opacity: .1;
+    margin: 5px 0 4px 0;
+  }
 }
 
 .js-off-canvas-overlay {
-   background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /******************************
 * content ajax default
 *******************************/
 .content-ajax {
-   @include mp-width();
+  @include mp-width();
 }
 
 /******************************
 * load ajax default
 *******************************/
 .load-ajax {
-   @include mp-width(100%, 100%);
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 6000;
-   background: rgba(17, 17, 17, 0.8);
-   @include mp-ctr();
-   display: none;
+  @include mp-width(100%, 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6000;
+  background: rgba(17, 17, 17, 0.8);
+  @include mp-ctr();
+  display: none;
 
-   svg {
-      @include mp-center;
-   }
+  svg {
+    @include mp-center;
+  }
 }
 
 /******************************
 * menu fixed
 *******************************/
 .menu-fixed {
-   @include mp-width($h: 50px);
-   background: $cd;
-   @include mp-animacao(300ms);
-   position: fixed;
-   top: -50px;
-   z-index: 1200;
-   ul {
-      @include mp-width($w: auto, $h: 50px, $c: true);
-      li {
-         @include mp-width(auto);
-         padding: 0 15px;
-         a {
-            @include mp-width(auto, 50px);
-            color: $csd;
-            font-size: 14px;
-            line-height: 50px;
-            &:hover, &.ativo {
-               color: $cd;
-            }
-         }
+  @include mp-width($h: 50px);
+  background: $cd;
+  @include mp-animacao(300ms);
+  position: fixed;
+  top: -50px;
+  z-index: 1200;
+  ul {
+    @include mp-width($w: auto, $h: 50px, $c: true);
+    li {
+      @include mp-width(auto);
+      padding: 0 15px;
+      a {
+        @include mp-width(auto, 50px);
+        color: $csd;
+        font-size: 14px;
+        line-height: 50px;
+        &:hover, &.ativo {
+          color: $cd;
+        }
       }
-   }
-   &.open {
-      top: 0;
-   }
+    }
+  }
+  &.open {
+    top: 0;
+  }
 }
 
 /******************************
 * centralizar
 *******************************/
 .ctr {
-   //noinspection CssInvalidPropertyValue
-   display: -ms-flex;
-   display: -webkit-flex;
-   display: flex;
-   /* centraliza na vertical */
-   -ms-align-items: center;
-   -webkit-align-items: center;
-   align-items: center;
-   /* centraliza na horizontal */
-   -ms-justify-content: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+  //noinspection CssInvalidPropertyValue
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  /* centraliza na vertical */
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* centraliza na horizontal */
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 // title bar
 
 .title-bar-left, .title-bar-right {
-   -ms-flex: 1 1 0px;
-   flex: 1 1 0px;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0px;
 }
 
 // hamburguer
-.title-bar .menu-icon{
-   margin-left: 0;
+.title-bar .menu-icon {
+  margin-left: 0;
 }
 
-.menu-icon::after{
-   background: $hamb-color;
-   -webkit-box-shadow: 0 7px 0 $hamb-color, 0 14px 0 $hamb-color;
-   box-shadow: 0 7px 0 $hamb-color, 0 14px 0 $hamb-color;
+.menu-icon::after {
+  background: $hamb-color;
+  -webkit-box-shadow: 0 7px 0 $hamb-color, 0 14px 0 $hamb-color;
+  box-shadow: 0 7px 0 $hamb-color, 0 14px 0 $hamb-color;
 }
 
 // logo menu mobile
-.logo-menu-mobile{
-   @include mp-width($m: 15px 0 0 0);
-   padding: 0 15px;
+.logo-menu-mobile {
+  @include mp-width($m: 15px 0 0 0);
+  padding: 0 15px;
+}
+
+// page content
+#conteudo-page {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 0 0 0;
+
+  #conteudo-page-int {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0;
+  }
+}
+
+// slider int
+.slider-int {
+  @include mp-width();
+  position: relative;
+}
+
+// modal
+.blocker {
+  padding: 0 !important;
+  background: #fff;
+}
+
+.modal {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+}
+
+.close-modal {
+  top: 20px !important;
+  right: 20px !important;
+}
+
+//divs / tags
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.p-relative {
+  position: relative;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
 }
