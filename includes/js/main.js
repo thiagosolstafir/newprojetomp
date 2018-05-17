@@ -1,14 +1,35 @@
-var h_tela = 0;
-var w_tela = 0;
-var scroll_site = 0;
-var y = 0;
-var controle_click = false;
-var top = 0;
-var id = 0;
-var url;
+let h_tela = 0;
+let w_tela = 0;
+let scroll_site = 0;
+let y = 0;
+let controle_click = false;
+let top = 0;
+let id = 0;
+let url;
 
 $(document).ready(function (e) {
    allFunctions();
+
+    /**
+     * @return {string}
+     */
+    let SPMaskBehavior = function (val) {
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+            onKeyPress: function(val, e, field, options) {
+                field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+    $('.cel').mask(SPMaskBehavior, spOptions);
+    $('.data').mask('00/00/0000');
+    $('.cep').mask('00000-000');
+    $('.telddd').mask('(00) 0000-0000');
+    $('.tel').mask('0000-0000');
+    $('.cpf').mask('000.000.000-00', {reverse: false});
+    $('.cnpj').mask('00.000.000/0000-00', {reverse: false});
+
 });
 
 function loadAjust() {
@@ -92,8 +113,8 @@ function allFunctions() {
 
    //select
    $(".form-select select ").change(function () {
-      var rec = $(this).parent('.form-select').find('strong');
-      var val = $(this).val();
+      let rec = $(this).parent('.form-select').find('strong');
+      let val = $(this).val();
       $(this).find('option').each(function (index, element) {
          if ($(element).val() == val) {
             rec.html($(element).html());

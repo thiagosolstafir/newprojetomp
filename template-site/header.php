@@ -23,10 +23,17 @@
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.modal.min.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/wow.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/main.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/foundation.js"<?php echo rand(); ?>></script>
+    <script src="<?php echo $mainFolder; ?>/includes/js/foundation.min.js"<?php echo rand(); ?>></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/swiper.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/fastsearch.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/fastselect.js"></script>
+    <script src="<?php echo $mainFolder; ?>/includes/js/mask.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo $mainFolder; ?>/includes/css/fallback.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $mainFolder; ?>/includes/lib/jquery.sweetalert2.css" />
+    <script type="text/javascript" src="<?php echo $mainFolder; ?>/includes/lib/jquery.sweetalert2.js"></script>
+    <script type="text/javascript" src="<?php echo $mainFolder; ?>/includes/lib/jquery.form.js"></script>
+    <script type="text/javascript" src="<?php echo $mainFolder; ?>/includes/js/mp-form-ajax.js"></script>
 
     <script type="text/javascript">
     new WOW().init();
@@ -45,8 +52,7 @@
         </button> -->
 
         <div class="logo-menu-mobile ctr">
-            <a href="<?php echo $mainFolder; ?>/home"><img src="<?php echo $mainFolder; ?>/includes/imgs/logo.png"
-                                                           alt=""></a>
+            <a href="<?php echo $mainFolder; ?>/home"><img src="<?php echo $mainFolder; ?>/includes/imgs/logo.png" alt=""></a>
         </div>
 
         <ul class="vertical menu text-center">
