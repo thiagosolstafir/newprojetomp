@@ -3,7 +3,6 @@ let w_tela = 0;
 let scroll_site = 0;
 let y = 0;
 let controle_click = false;
-let top = 0;
 let id = 0;
 let url;
 
