@@ -1,5 +1,5 @@
 @import "settings";
-@import "mixins";
+@import "functions";
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box !important;
@@ -11,7 +11,7 @@
 body {
   font-family: $bff;
   font-size: $global-font-size;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   overflow-y: scroll;
   background: $bgc;
 }
@@ -37,10 +37,5 @@ input[type=text],
 input[type=email],
 input[type=password],
 textarea {
-
   @include mp-animacao;
-
-  &:hover {
-    border-color: $cd;
-  }
 }

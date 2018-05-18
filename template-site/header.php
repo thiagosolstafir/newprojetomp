@@ -22,12 +22,14 @@
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.min.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/jquery.modal.min.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/wow.js?<?php echo rand(); ?>"></script>
-    <script src="<?php echo $mainFolder; ?>/includes/js/main.js?<?php echo rand(); ?>"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/foundation.min.js"<?php echo rand(); ?>></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/swiper.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/fastsearch.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/fastselect.js"></script>
     <script src="<?php echo $mainFolder; ?>/includes/js/mask.min.js"></script>
+
+    <script src="<?php echo $mainFolder; ?>/includes/js/main.js?<?php echo rand(); ?>"></script>
+
 
     <link rel="stylesheet" type="text/css" href="<?php echo $mainFolder; ?>/includes/css/fallback.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $mainFolder; ?>/includes/lib/jquery.sweetalert2.css" />
@@ -47,15 +49,15 @@
 
     <div class="m-mobile off-canvas position-left" id="menuMobile" data-off-canvas>
 
-        <!-- <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
-        </button> -->
+        </button>
 
-        <div class="logo-menu-mobile ctr">
-            <a href="<?php echo $mainFolder; ?>/home"><img src="<?php echo $mainFolder; ?>/includes/imgs/logo.png" alt=""></a>
-        </div>
+<!--        <div class="logo-menu-mobile ctr">-->
+<!--            <a href="--><?php //echo $mainFolder; ?><!--/home"><img src="--><?php //echo $mainFolder; ?><!--/includes/imgs/logo.png" alt=""></a>-->
+<!--        </div>-->
 
-        <ul class="vertical menu text-center">
+        <ul class="vertical menu">
            <li><a href="<?php echo $mainFolder; ?>/home" <?php if($page == "home"){ ?> class="ativo" <?php } ?>>Home</a></li>
         </ul>
 

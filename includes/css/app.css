@@ -7,7 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   overflow-y: scroll;
   background: #fff; }
 
@@ -39,11 +39,6 @@ textarea {
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   -webkit-tap-highlight-color: transparent; }
-  input[type=text]:hover,
-  input[type=email]:hover,
-  input[type=password]:hover,
-  textarea:hover {
-    border-color: #000; }
 
 .fluid {
   width: 100%;
@@ -67,9 +62,6 @@ textarea {
 /******************************
 * Menu mobile
 *******************************/
-.title-bar-bg-active {
-  background: rgba(68, 68, 68, 0.85) !important; }
-
 .title-bar {
   -moz-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
@@ -137,7 +129,7 @@ textarea {
     margin: 5px 0 4px 0; }
 
 .js-off-canvas-overlay {
-  background: rgba(0, 0, 0, 0.6); }
+  background: rgba(0, 0, 0, 0.8); }
 
 /******************************
 * content ajax default
@@ -236,12 +228,8 @@ textarea {
   -webkit-justify-content: center;
   justify-content: center; }
 
-.title-bar-left, .title-bar-right {
-  -ms-flex: 1 1 0px;
-  flex: 1 1 0px; }
-
 .title-bar .menu-icon {
-  margin-left: 0; }
+  margin: 0; }
 
 .menu-icon::after {
   background: #eee;
@@ -254,17 +242,6 @@ textarea {
   float: left;
   margin: 15px 0 0 0;
   padding: 0 15px; }
-
-#conteudo-page {
-  width: 100%;
-  height: auto;
-  float: left;
-  margin: 0 0 0 0; }
-  #conteudo-page #conteudo-page-int {
-    width: 100%;
-    height: auto;
-    float: left;
-    margin: 0; }
 
 .slider-int {
   width: 100%;
@@ -296,9 +273,13 @@ textarea {
 .p-relative {
   position: relative; }
 
+.p-absolute {
+  position: absolute; }
+
 ol, ul, li {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style: none; }
 
 .slider-int {
   width: 100%;
@@ -320,6 +301,9 @@ ol, ul, li {
 .close-modal {
   top: 20px !important;
   right: 20px !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif; }
 
 @media (max-width: 1360px) {
   .area-navs {
