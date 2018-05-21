@@ -1,214 +1,214 @@
 @mixin mp-width($w:100%, $h:auto, $m:0, $f:left, $c: false, $i: false) {
-   @if $c == true {
-      @include mp-center;
+  @if $c == true {
+    @include mp-center;
+    width: $w;
+    height: $h;
+  } @else {
+    @if $i == true {
+      width: $w !important;
+      height: $h !important;
+      float: $f;
+      margin: $m;
+    } @else {
       width: $w;
       height: $h;
-   } @else {
-      @if $i == true {
-         width: $w !important;
-         height: $h !important;
-         float: $f;
-         margin: $m;
-      } @else {
-         width: $w;
-         height: $h;
-         float: $f;
-         margin: $m;
-      }
-   }
+      float: $f;
+      margin: $m;
+    }
+  }
 }
 
 @mixin colunas($q) {
-   columns: $q;
-   -webkit-columns: $q;
-   -moz-columns: $q;
-   @content;
+  columns: $q;
+  -webkit-columns: $q;
+  -moz-columns: $q;
+  @content;
 }
 
 @mixin mp-animacao($tempo: 200ms) {
-   -moz-transition: all $tempo ease-in-out;
-   -o-transition: all $tempo ease-in-out;
-   -webkit-transition: all $tempo ease-in-out;
-   transition: all $tempo ease-in-out;
-   -webkit-tap-highlight-color: transparent;
+  -moz-transition: all $tempo ease-in-out;
+  -o-transition: all $tempo ease-in-out;
+  -webkit-transition: all $tempo ease-in-out;
+  transition: all $tempo ease-in-out;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @mixin mp-sem-animacao {
-   -moz-transition: all 0 ease-in-out !important;
-   -o-transition: all 0 ease-in-out !important;
-   -webkit-transition: all 0 ease-in-out !important;
-   transition: all 0 ease-in-out !important;
-   -webkit-tap-highlight-color: transparent !important;
+  -moz-transition: all 0 ease-in-out !important;
+  -o-transition: all 0 ease-in-out !important;
+  -webkit-transition: all 0 ease-in-out !important;
+  transition: all 0 ease-in-out !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 @mixin mp-br($tl: 4px, $tr: 4px, $br: 4px, $bl: 4px) {
-   -webkit-border-radius: $tl $tr $br $bl;
-   -moz-border-radius: $tl $tr $br $bl;
-   -o-border-radius: $tl $tr $br $bl;
-   border-radius: $tl $tr $br $bl;
+  -webkit-border-radius: $tl $tr $br $bl;
+  -moz-border-radius: $tl $tr $br $bl;
+  -o-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
 }
 
 @mixin mp-brall($br: 4px) {
-   -webkit-border-radius: $br;
-   -moz-border-radius: $br;
-   -o-border-radius: $br;
-   border-radius: $br;
+  -webkit-border-radius: $br;
+  -moz-border-radius: $br;
+  -o-border-radius: $br;
+  border-radius: $br;
 }
 
 @mixin mp-sombra($c: #333, $t: 0.2px) {
-   -webkit-text-stroke-color: $c !important;
-   -webkit-text-stroke: $t !important;
+  -webkit-text-stroke-color: $c !important;
+  -webkit-text-stroke: $t !important;
 }
 
 @mixin mp-sem-sombra {
-   -webkit-text-stroke-color: transparent !important;
-   -webkit-text-stroke: 0px !important;
+  -webkit-text-stroke-color: transparent !important;
+  -webkit-text-stroke: 0px !important;
 }
 
 @mixin mp-scale($scale) {
-   -webkit-transform: scale($scale);
+  -webkit-transform: scale($scale);
 }
 
 @mixin mp-imgresponsive($display: flex) {
-   display: $display;
-   width: 100%;
-   max-width: 100%;
-   height: auto;
+  display: $display;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @mixin mp-placeholder {
-   &.placeholder {
-      @content;
-   }
-   &:-moz-placeholder {
-      @content;
-   }
-   &::-moz-placeholder {
-      @content;
-   }
-   &:-ms-input-placeholder {
-      @content;
-   }
-   &::-webkit-input-placeholder {
-      @content;
-   }
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
 }
 
 @mixin mp-hardware($backface: true, $perspective: 1000) {
-   @if $backface {
-      backface-visibility: hidden;
-   }
-   -webkit-perspective: $perspective;
-   perspective: $perspective;
+  @if $backface {
+    backface-visibility: hidden;
+  }
+  -webkit-perspective: $perspective;
+  perspective: $perspective;
 }
 
 @mixin mp-center {
-   display: table;
-   margin: {
-      left: auto;
-      right: auto;
-   }
+  display: table;
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 
 @mixin mp-truncate($truncation-boundary) {
-   max-width: $truncation-boundary;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @mixin mp-text-shadow( $top: 3px, $left: 3px, $blur: 3px, $colour: #333) {
-   -webkit-text-shadow: $top $left $blur $colour;
-   -moz-text-shadow: $top $left $blur $colour;
-   -o-text-shadow: $top $left $blur $colour;
-   text-shadow: $top $left $blur $colour;
+  -webkit-text-shadow: $top $left $blur $colour;
+  -moz-text-shadow: $top $left $blur $colour;
+  -o-text-shadow: $top $left $blur $colour;
+  text-shadow: $top $left $blur $colour;
 }
 
 @mixin mp-rotate( $val: -2deg) {
-   -webkit-transform: rotate($val);
-   -moz-transform: rotate($val);
-   -ms-transform: rotate($val);
-   -o-transform: rotate($val);
-   transform: rotate($val);
+  -webkit-transform: rotate($val);
+  -moz-transform: rotate($val);
+  -ms-transform: rotate($val);
+  -o-transform: rotate($val);
+  transform: rotate($val);
 }
 
 @mixin mp-button($name, $w, $h, $bg, $color, $fw, $br) {
-   .#{$name} {
-      @include mp-width($w, $h);
-      @include mp-br($br, $br, $br, $br);
-      background: $bg;
-      font-weight: $fw;
-      color: $color;
-      cursor: pointer;
-      padding: 5px 20px;
-      @content
-   }
+  .#{$name} {
+    @include mp-width($w, $h);
+    @include mp-br($br, $br, $br, $br);
+    background: $bg;
+    font-weight: $fw;
+    color: $color;
+    cursor: pointer;
+    padding: 5px 20px;
+    @content
+  }
 }
 
 @mixin mp-calc($property, $value) {
-   #{$property}: -moz-calc(#{$value});
-   #{$property}: -webkit-calc(#{$value});
-   #{$property}: calc(#{$value});
+  #{$property}: -moz-calc(#{$value});
+  #{$property}: -webkit-calc(#{$value});
+  #{$property}: calc(#{$value});
 }
 
 @mixin mp-ctr($js: center) {
-   //noinspection CssInvalidPropertyValue
-   display: -ms-flex;
-   display: -webkit-flex;
-   display: flex;
-   /* centraliza na vertical */
-   -ms-align-items: center;
-   -webkit-align-items: center;
-   align-items: center;
-   /* centraliza na horizontal */
-   -ms-justify-content: center;
-   -webkit-justify-content: center;
-   justify-content: $js;
-   @content;
+  //noinspection CssInvalidPropertyValue
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  /* centraliza na vertical */
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* centraliza na horizontal */
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: $js;
+  @content;
 }
 
 @mixin clearfix {
-   &::before,
-   &::after {
-      display: table;
-      content: ' ';
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
 
-      @if $global-flexbox {
-         flex-basis: 0;
-         order: 1;
-      }
-   }
+    @if $global-flexbox {
+      flex-basis: 0;
+      order: 1;
+    }
+  }
 
-   &::after {
-      clear: both;
-   }
+  &::after {
+    clear: both;
+  }
 }
 
 // select
-@mixin select($input: true){
+@mixin select($input: true) {
 
-@if $input == false{
-    .fstToggleBtn{
+  @if $input == false {
+    .fstToggleBtn {
       color: $cd !important;
     }
 
-    .fstSingleMode .fstQueryInput{
-        opacity: 0;
+    .fstSingleMode .fstQueryInput {
+      opacity: 0;
     }
 
-    .fstSingleMode.fstActive .fstResults{
-        margin-top: -65px;
+    .fstSingleMode.fstActive .fstResults {
+      margin-top: -65px;
     }
-}
+  }
 
-.fstElement{
+  .fstElement {
     width: 100%;
     float: left;
     border: 0;
     background: transparent;
   }
 
-  .fstToggleBtn{
+  .fstToggleBtn {
     height: 46px;
     font-size: 16px;
     font-weight: 300;
@@ -219,45 +219,44 @@
     min-width: 100% !important;
   }
 
-  .fstResultItem{
+  .fstResultItem {
     font-size: 14px;
     border: 0;
   }
 
-  .fstFocused{
+  .fstFocused {
     background-color: $cd;
   }
 
-  .fstResultItem.fstSelected{
+  .fstResultItem.fstSelected {
     background-color: $cd;
     border-color: $cd;
   }
 
-  .fstQueryInput{
+  .fstQueryInput {
     font-size: 14px;
   }
 
-  .fstToggleBtn:after{
+  .fstToggleBtn:after {
     border-top-color: $ctxt;
   }
 
-  .fstSingleMode .fstQueryInput{
+  .fstSingleMode .fstQueryInput {
     padding: 7px 15px;
     height: 40px;
 
-    @include mp-placeholder{
+    @include mp-placeholder {
       font-size: 14px;
     }
   }
 
-  .fstNoResults{
+  .fstNoResults {
     font-size: 15px;
     line-height: 20px;
     padding: 10px;
   }
   @content;
 }
-
 
 @mixin mp-tooltip($content: attr(data-tooltip), $direction: top) {
   position: relative;
@@ -278,42 +277,59 @@
       @include text-shadow(1px 1px #000);
       background-color: #222;
     }
-    @if ($direction == 'top'){
+    @if ($direction == 'top') {
       &:before {
         @include triangle(down, 6px, #222);
-        top: -6px; margin-top: 0;
+        top: -6px;
+        margin-top: 0;
         left: 47%;
       }
       &:after {
         top: -28px;
-        left: 47%; margin-left: -20px;
+        left: 47%;
+        margin-left: -20px;
       }
-    }
-    @else if ($direction == 'bottom'){
+    } @else if ($direction == 'bottom') {
       &:before {
         @include triangle(up, 6px, #222);
-        top: auto; margin-top: 0;
+        top: auto;
+        margin-top: 0;
         bottom: -6px;
         left: 47%;
       }
       &:after {
         bottom: -28px;
-        left: 47%; margin-left: -20px;
+        left: 47%;
+        margin-left: -20px;
       }
     }
   }
 }
 
-@mixin content-margins($selector: '> *', $last-child: false) {
+@mixin mp-margins($selector: '> *', $last-child: false) {
   @if not $selector {
     $selector: '&';
   }
 
   #{unquote($selector)} {
-    &:first-child { margin-top: 0; }
-    @if $last-child {
-      &:last-child { margin-bottom: 0; }
+    &:first-child {
+      margin-top: 0;
     }
+    @if $last-child {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@mixin test($b: "") {
+  @if $b == "" {
+    border: 1px solid red;
+    @content;
+  } @else {
+    border-#{$b}: 1px solid red;
+    @content;
   }
 }
 
@@ -323,61 +339,61 @@
 /// @param {Number} $max - Maximum number of items to detect. The higher this number is, the more CSS that's required to cover each number of items.
 /// @param {Keyword} $elem [li] - Tag to use for sibling selectors.
 @mixin auto-width($max, $elem: li) {
-   @for $i from 2 through $max {
-      &:nth-last-child(#{$i}):first-child,
-      &:nth-last-child(#{$i}):first-child ~ #{$elem} {
-         width: percentage(1 / $i);
-      }
-   }
+  @for $i from 2 through $max {
+    &:nth-last-child(#{$i}):first-child,
+    &:nth-last-child(#{$i}):first-child ~ #{$elem} {
+      width: percentage(1 / $i);
+    }
+  }
 }
 
 /// Removes the focus ring around an element when a mouse input is detected.
 @mixin disable-mouse-outline {
-   [data-whatinput='mouse'] & {
-      outline: 0;
-   }
+  [data-whatinput='mouse'] & {
+    outline: 0;
+  }
 }
 
 /// Makes an element visually hidden, but still accessible to keyboards and assistive devices.
 /// @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility Hiding Content for Accessibility
 @mixin element-invisible {
-   position: absolute !important;
-   width: 1px;
-   height: 1px;
-   overflow: hidden;
-   clip: rect(0, 0, 0, 0);
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 /// Reverses the CSS output created by the `element-invisible()` mixin.
 @mixin element-invisible-off {
-   position: static !important;
-   width: auto;
-   height: auto;
-   overflow: visible;
-   clip: auto;
+  position: static !important;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
 }
 
 /// Vertically centers the element inside of its first non-static parent,
 /// @link http://www.sitepoint.com/centering-with-sass/ Centering With Sass
 @mixin vertical-center {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /// Horizontally centers the element inside of its first non-static parent,
 /// @link http://www.sitepoint.com/centering-with-sass/ Centering With Sass
 @mixin horizontal-center {
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /// Absolutely centers the element inside of its first non-static parent,
 /// @link http://www.sitepoint.com/centering-with-sass/ Centering With Sass
 @mixin absolute-center {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
