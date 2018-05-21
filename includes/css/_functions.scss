@@ -258,6 +258,65 @@
   @content;
 }
 
+
+@mixin mp-tooltip($content: attr(data-tooltip), $direction: top) {
+  position: relative;
+  &:before, &:after {
+    display: none;
+    z-index: 98;
+  }
+  &:hover {
+    &:after { // for text bubble
+      content: $content;
+      display: block;
+      position: absolute;
+      height: 12px; // (makes total height including padding 22px)
+      padding: 6px;
+      font-size: 12px;
+      white-space: nowrap;
+      color: #fff;
+      @include text-shadow(1px 1px #000);
+      background-color: #222;
+    }
+    @if ($direction == 'top'){
+      &:before {
+        @include triangle(down, 6px, #222);
+        top: -6px; margin-top: 0;
+        left: 47%;
+      }
+      &:after {
+        top: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+    @else if ($direction == 'bottom'){
+      &:before {
+        @include triangle(up, 6px, #222);
+        top: auto; margin-top: 0;
+        bottom: -6px;
+        left: 47%;
+      }
+      &:after {
+        bottom: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+  }
+}
+
+@mixin content-margins($selector: '> *', $last-child: false) {
+  @if not $selector {
+    $selector: '&';
+  }
+
+  #{unquote($selector)} {
+    &:first-child { margin-top: 0; }
+    @if $last-child {
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+}
+
 /// Adds CSS for a "quantity query" selector that automatically sizes elements based on how many there are inside a container.
 /// @link http://alistapart.com/article/quantity-queries-for-css Quantity Queries for CSS
 ///
