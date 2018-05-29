@@ -189,7 +189,7 @@
 
   @if $input == false {
     .fstToggleBtn {
-      color: $cd !important;
+      color: $c !important;
     }
 
     .fstSingleMode .fstQueryInput {
@@ -213,7 +213,7 @@
     font-size: 16px;
     font-weight: 300;
     @include mp-sombra();
-    color: $color-txt;
+    color: $ct;
     padding: 10px 15px;
     @include mp-ctr(flex-start);
     min-width: 100% !important;
@@ -225,12 +225,12 @@
   }
 
   .fstFocused {
-    background-color: $cd;
+    background-color: $c;
   }
 
   .fstResultItem.fstSelected {
-    background-color: $cd;
-    border-color: $cd;
+    background-color: $c;
+    border-color: $c;
   }
 
   .fstQueryInput {
@@ -238,7 +238,7 @@
   }
 
   .fstToggleBtn:after {
-    border-top-color: $ctxt;
+    border-top-color: $ct;
   }
 
   .fstSingleMode .fstQueryInput {
