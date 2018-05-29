@@ -333,6 +333,13 @@
   }
 }
 
+@mixin testbg($bg) {
+    background: #{$bg};
+    @content;
+  
+}
+
+
 /// Adds CSS for a "quantity query" selector that automatically sizes elements based on how many there are inside a container.
 /// @link http://alistapart.com/article/quantity-queries-for-css Quantity Queries for CSS
 ///
