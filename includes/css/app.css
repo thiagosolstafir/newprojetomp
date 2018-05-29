@@ -85,7 +85,8 @@ textarea {
     opacity: 0; }
 
 .m-mobile {
-  background: #ffffff; }
+  background: #ffffff;
+  padding-top: 40px; }
   .m-mobile ul {
     margin: 50px 0 0 0; }
     .m-mobile ul li {
@@ -116,7 +117,7 @@ textarea {
     width: 100%;
     height: auto;
     float: left;
-    margin: 40px 0 0 0; }
+    margin: 0; }
     .m-mobile .menu.vertical > li {
       width: 100%;
       float: left; }
