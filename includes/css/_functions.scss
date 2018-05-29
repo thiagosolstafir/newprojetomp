@@ -334,7 +334,11 @@
 }
 
 @mixin testbg($bg) {
-  background: #{$bg};
+  @if $bg == "" {
+    background: red;
+  } @else {
+    background: #{$bg};
+  }
   @content;
 }
 
