@@ -1,8 +1,11 @@
+@import "settings";
+
 @mixin mp-width($w:100%, $h:auto, $m:0, $f:left, $c: false, $i: false) {
   @if $c == true {
-    @include mp-center;
     width: $w;
     height: $h;
+    float: none;
+    display: table;
   } @else {
     @if $i == true {
       width: $w !important;
@@ -34,10 +37,10 @@
 }
 
 @mixin mp-sem-animacao {
-  -moz-transition: all 0 ease-in-out !important;
-  -o-transition: all 0 ease-in-out !important;
-  -webkit-transition: all 0 ease-in-out !important;
-  transition: all 0 ease-in-out !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
   -webkit-tap-highlight-color: transparent !important;
 }
 
@@ -62,7 +65,7 @@
 
 @mixin mp-sem-sombra {
   -webkit-text-stroke-color: transparent !important;
-  -webkit-text-stroke: 0px !important;
+  -webkit-text-stroke: unset !important;
 }
 
 @mixin mp-scale($scale) {
@@ -167,22 +170,6 @@
   @content;
 }
 
-@mixin clearfix {
-  &::before,
-  &::after {
-    display: table;
-    content: ' ';
-
-    @if $global-flexbox {
-      flex-basis: 0;
-      order: 1;
-    }
-  }
-
-  &::after {
-    clear: both;
-  }
-}
 
 // select
 @mixin select($input: true) {
@@ -274,12 +261,12 @@
       font-size: 12px;
       white-space: nowrap;
       color: #fff;
-      @include text-shadow(1px 1px #000);
+      //@include text-shadow(1px 1px #000);
       background-color: #222;
     }
     @if ($direction == 'top') {
       &:before {
-        @include triangle(down, 6px, #222);
+        //@include triangle(down, 6px, #222);
         top: -6px;
         margin-top: 0;
         left: 47%;
@@ -291,7 +278,7 @@
       }
     } @else if ($direction == 'bottom') {
       &:before {
-        @include triangle(up, 6px, #222);
+        //@include triangle(up, 6px, #222);
         top: auto;
         margin-top: 0;
         bottom: -6px;

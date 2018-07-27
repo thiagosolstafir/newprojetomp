@@ -2,13 +2,6 @@
 @import 'functions';
 
 // layout
-.fluid {
-  width: 100%;
-  height: auto;
-  float: left;
-  clear: both;
-}
-
 .responsive {
   width: 100%;
   max-width: $global-responsive;
@@ -17,14 +10,9 @@
   padding: 0 15px;
 }
 
-// swiper //
-.swiper-wrapper {
-  opacity: 0;
-}
-
 .swiper-button-disabled {
   cursor: default;
-  //opacity: .5;
+  opacity: .5;
 }
 
 /******************************
@@ -120,23 +108,6 @@
   @include mp-width();
 }
 
-/******************************
-* load ajax default
-*******************************/
-.load-ajax {
-  @include mp-width(100%, 100%);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 6000;
-  background: rgba(17, 17, 17, 0.8);
-  @include mp-ctr();
-  display: none;
-
-  svg {
-    @include mp-center;
-  }
-}
 
 /******************************
 * menu fixed
